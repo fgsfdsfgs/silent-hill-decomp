@@ -80,6 +80,7 @@ segments:
       - [0x1CC4, c, fsqueue_2] # fs queue functions part 2, split due to usage of jtbl in rodata
       - [0x1E30, c, fsqueue_3] # fs queue functions part 3
       - [0x2470, c, fsmem] # fs heap allocator
+      - [0x2778, c, memcpy] # custom memcpy implementation
       - [0x28B8, c, rng] # RNG functions
       - [0x293C, c, memmove32] # memmove32
 

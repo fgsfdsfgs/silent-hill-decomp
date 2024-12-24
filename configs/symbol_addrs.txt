@@ -523,7 +523,6 @@ fsQueuePostLoadTim = 0X80011B24; // type:func
 fsQueuePostLoadAnm = 0X80011C3C; // type:func // unsure, calls into bodyprog, which then uses GsCOORDINATE2
 
 // fsmem
-// these might actually be from psyq heap or something, since they're in close proximity to memcpy
 g_FsMem = 0x800230c0; // type:u32 size:0xe0 // actually is a struct
 fsMemInit = 0X80011C70; // type:func
 nullsub_80011cfc = 0x80011cfc; // type:func
@@ -531,6 +530,8 @@ fsMemAlloc = 0X80011D04; // type:func
 fsMemClampBlock = 0X80011E4C; // type:func
 fsMemFree = 0x80011ed0; // type:func
 fsMemRelinkBlock = 0X80011F48; // type:func
+
+// memcpy
 memcpy = 0X80011F78; // type:func
 nullsub_800120b0 = 0x800120b0; // type:func
 
@@ -542,7 +543,7 @@ rngGetSeed = 0x80012104; // type:func
 rngSetSeed = 0x80012110; // type:func
 rngRand12 = 0x8001211c; // type:func
 
-// memmove
+// memmove32
 memmove32 = 0x8001213c; // type:func
 
 // psyq
